@@ -1,0 +1,23 @@
+module LogicaLEDs(Alt, Inv, Prg, A, B, C, D);
+	input A, B, C, D;
+	output Alt, Inv, Prg;
+	
+	wire [5:0]T;
+	
+	not(Ab, A);
+	not(Bb, B);
+	not(Cb, C);
+	not(Db, D);
+	
+	and(T[1], Ab, Bb, D);
+	and(T[2], Bb, C);
+	
+	or(Alt, T[1], T[2]);
+	
+	and(Inv, B, Cb);
+	
+	and(T[3], B, D);
+	or(T[4], A, C);
+	and(T[5], Db, T[4]);
+	or(Prg, T[3], T[5]);
+endmodule

@@ -1,0 +1,11 @@
+module teste(F, L, P, T, S);
+	input(A, B, C, D);
+	output(S);
+	wire (F0, F1, F2);
+	
+	and(F0, T, P);
+	and(S, F0, T);
+
+endmodule
+	
+	

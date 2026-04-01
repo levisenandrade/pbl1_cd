@@ -1,0 +1,12 @@
+module Logic(S, A, B, C, D);
+	input A, B, C, D;
+	output [3:0]S;
+	
+	wire Ab, Bb, Cb, Db;
+	
+	not(Ab, A);
+	not(Bb, B);
+	not(Cb, C);
+	not(Db, D);
+	
+	and(S[3], A, B, Cb);

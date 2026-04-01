@@ -1,0 +1,10 @@
+Info (10281): Verilog HDL Declaration information at Conversor.v(2): object "A" differs only in case from object "a" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Conversor.v Line: 2
+Info (10281): Verilog HDL Declaration information at Conversor.v(2): object "B" differs only in case from object "b" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Conversor.v Line: 2
+Info (10281): Verilog HDL Declaration information at Conversor.v(2): object "C" differs only in case from object "c" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Conversor.v Line: 2
+Info (10281): Verilog HDL Declaration information at Conversor.v(2): object "D" differs only in case from object "d" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Conversor.v Line: 2
+Info (10281): Verilog HDL Declaration information at Conversor.v(2): object "E" differs only in case from object "e" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Conversor.v Line: 2
+Info (10281): Verilog HDL Declaration information at Main.v(3): object "A" differs only in case from object "a" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Main.v Line: 3
+Info (10281): Verilog HDL Declaration information at Main.v(3): object "B" differs only in case from object "b" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Main.v Line: 3
+Info (10281): Verilog HDL Declaration information at Main.v(3): object "C" differs only in case from object "c" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Main.v Line: 3
+Info (10281): Verilog HDL Declaration information at Main.v(3): object "D" differs only in case from object "d" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Main.v Line: 3
+Info (10281): Verilog HDL Declaration information at Main.v(4): object "g" differs only in case from object "G" in the same scope File: /home/aluno/Downloads/VFinal/V2/teste/Main.v Line: 4

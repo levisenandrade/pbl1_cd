@@ -1,0 +1,56 @@
+module Mux4inp4bits(S, A, B, C, D, Slc0, Slc1);
+	input [4:0]A;
+	input [4:0]B;
+	input [4:0]C;
+	input [4:0]D;
+	
+	input Slc0, Slc1;
+	
+	output [4:0]S;
+	
+	Mux4inp bit0 (
+	.S(S[0]), 
+	.A(A[0]), 
+	.B(B[0]), 
+	.C(C[0]), 
+	.D(D[0]), 
+	.Slc0(Slc0), 
+	.Slc1(Slc1));
+	
+	Mux4inp bit1 (
+	.S(S[1]), 
+	.A(A[1]), 
+	.B(B[1]), 
+	.C(C[1]), 
+	.D(D[1]), 
+	.Slc0(Slc0), 
+	.Slc1(Slc1));
+	
+	Mux4inp bit2 (
+	.S(S[2]), 
+	.A(A[2]), 
+	.B(B[2]), 
+	.C(C[2]), 
+	.D(D[2]), 
+	.Slc0(Slc0), 
+	.Slc1(Slc1));
+	
+	Mux4inp bit3 (
+	.S(S[3]), 
+	.A(A[3]), 
+	.B(B[3]), 
+	.C(C[3]), 
+	.D(D[3]), 
+	.Slc0(Slc0), 
+	.Slc1(Slc1));
+	
+	Mux4inp bit4 (
+	.S(S[4]), 
+	.A(A[4]), 
+	.B(B[4]), 
+	.C(C[4]), 
+	.D(D[4]), 
+	.Slc0(Slc0), 
+	.Slc1(Slc1));
+	
+endmodule

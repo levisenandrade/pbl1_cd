@@ -1,0 +1,4549 @@
+|Main
+a <= Conversor:C0.a
+b <= Conversor:C0.b
+c <= Conversor:C0.c
+d <= Conversor:C0.d
+e <= Conversor:C0.e
+f <= Conversor:C0.f
+g <= Conversor:C0.g
+S[0] <= Mux4inp8bits:Mux1.S
+S[1] <= Mux4inp8bits:Mux1.S
+S[2] <= Mux4inp8bits:Mux1.S
+S[3] <= Mux4inp8bits:Mux1.S
+S[4] <= Mux4inp8bits:Mux1.S
+S[5] <= Mux4inp8bits:Mux1.S
+S[6] <= Mux4inp8bits:Mux1.S
+S[7] <= Mux4inp8bits:Mux1.S
+Hsync <= FlipFlopD:FF_HSYNC.q
+Vsync <= FlipFlopD:FF_VSYNC.q
+R[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+G[0] <= <GND>
+G[1] <= <GND>
+G[2] <= <GND>
+G[3] <= <GND>
+Blue[0] <= <GND>
+Blue[1] <= <GND>
+Blue[2] <= <GND>
+Blue[3] <= <GND>
+CLK => CLK.IN1
+A => A.IN3
+B => B.IN3
+C => C.IN3
+D => D.IN3
+Slc0 => Slc0.IN2
+Slc1 => Slc1.IN2
+
+
+|Main|Logic:L0
+S[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+A => WideAnd0.IN0
+A => WideAnd2.IN0
+A => WideAnd3.IN0
+A => T[5].IN0
+A => WideAnd7.IN0
+A => WideAnd1.IN0
+A => WideAnd5.IN0
+A => T[7].IN0
+A => WideAnd6.IN0
+B => WideAnd0.IN1
+B => WideAnd2.IN1
+B => WideAnd5.IN1
+B => T[6].IN0
+B => T[7].IN1
+B => WideAnd4.IN0
+B => T[5].IN1
+B => WideAnd7.IN1
+C => WideAnd2.IN2
+C => WideAnd3.IN1
+C => T[6].IN1
+C => WideAnd6.IN1
+C => WideAnd0.IN2
+C => WideAnd1.IN1
+C => WideAnd4.IN1
+D => WideAnd1.IN2
+D => WideAnd3.IN2
+D => WideAnd4.IN2
+D => WideAnd6.IN2
+D => WideAnd7.IN2
+D => WideAnd5.IN2
+
+
+|Main|Mux4inp4bits:Mux0
+S[0] <= Mux4inp:bit0.S
+S[1] <= Mux4inp:bit1.S
+S[2] <= Mux4inp:bit2.S
+S[3] <= Mux4inp:bit3.S
+S[4] <= Mux4inp:bit4.S
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+C[3] => C[3].IN1
+C[4] => C[4].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+Slc0 => Slc0.IN5
+Slc1 => Slc1.IN5
+
+
+|Main|Mux4inp4bits:Mux0|Mux4inp:bit0
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp4bits:Mux0|Mux4inp:bit1
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp4bits:Mux0|Mux4inp:bit2
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp4bits:Mux0|Mux4inp:bit3
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp4bits:Mux0|Mux4inp:bit4
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Conversor:C0
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+A => WideAnd7.IN0
+A => WideAnd12.IN0
+A => T[20].IN1
+A => WideAnd14.IN0
+A => WideAnd15.IN0
+A => WideAnd17.IN0
+A => WideAnd0.IN0
+A => T[6].IN0
+A => WideAnd3.IN0
+A => WideAnd4.IN0
+A => WideAnd10.IN0
+A => WideAnd11.IN0
+A => WideAnd16.IN0
+B => WideAnd2.IN0
+B => T[6].IN1
+B => WideAnd5.IN0
+B => WideAnd6.IN0
+B => WideAnd9.IN0
+B => WideAnd13.IN0
+B => T[1].IN1
+B => WideAnd1.IN0
+B => WideAnd14.IN1
+B => WideAnd17.IN1
+B => WideAnd18.IN0
+B => T[30].IN1
+B => WideAnd19.IN0
+C => WideAnd0.IN1
+C => WideAnd1.IN1
+C => WideAnd2.IN1
+C => WideAnd6.IN1
+C => WideAnd7.IN1
+C => WideAnd8.IN1
+C => WideAnd9.IN1
+C => WideAnd11.IN1
+C => WideAnd12.IN1
+C => WideAnd19.IN1
+C => T[4].IN1
+C => WideAnd3.IN1
+C => WideAnd13.IN1
+C => WideAnd15.IN1
+C => WideAnd16.IN1
+C => T[25].IN1
+C => WideAnd17.IN2
+C => WideAnd18.IN1
+D => WideAnd4.IN1
+D => WideAnd5.IN1
+D => WideAnd7.IN2
+D => WideAnd9.IN2
+D => WideAnd12.IN2
+D => WideAnd13.IN2
+D => WideAnd16.IN2
+D => WideAnd17.IN3
+D => T[27].IN1
+D => WideAnd19.IN2
+D => WideAnd0.IN2
+D => WideAnd1.IN2
+D => WideAnd2.IN2
+D => WideAnd8.IN2
+D => WideAnd10.IN1
+D => WideAnd15.IN2
+D => WideAnd18.IN2
+D => T[32].IN1
+E => T[2].IN1
+E => WideAnd2.IN3
+E => WideAnd3.IN2
+E => WideAnd4.IN2
+E => WideAnd5.IN2
+E => WideAnd12.IN3
+E => WideAnd14.IN2
+E => WideAnd15.IN3
+E => T[24].IN1
+E => WideAnd19.IN3
+E => WideAnd1.IN3
+E => WideAnd6.IN2
+E => WideAnd7.IN3
+E => T[13].IN1
+E => T[15].IN1
+E => WideAnd10.IN2
+E => WideAnd11.IN2
+E => WideAnd13.IN3
+E => WideAnd16.IN3
+E => T[28].IN1
+
+
+|Main|LogicaLEDs:Log0
+Alt <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Inv <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Prg <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN0
+A => WideAnd0.IN0
+B => comb.IN0
+B => T[3].IN0
+B => WideAnd0.IN1
+B => T[2].IN0
+C => T[2].IN1
+C => T[4].IN1
+C => comb.IN1
+D => WideAnd0.IN2
+D => T[3].IN1
+D => T[5].IN1
+
+
+|Main|Mux4inp8bits:Mux1
+S[0] <= Mux4inp4bits:Mux0.S
+S[1] <= Mux4inp4bits:Mux0.S
+S[2] <= Mux4inp4bits:Mux0.S
+S[3] <= Mux4inp4bits:Mux0.S
+S[4] <= Mux4inp4bits:Mux1.S
+S[5] <= Mux4inp4bits:Mux1.S
+S[6] <= Mux4inp4bits:Mux1.S
+S[7] <= Mux4inp4bits:Mux1.S
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+C[3] => C[3].IN1
+C[4] => C[4].IN1
+C[5] => C[5].IN1
+C[6] => C[6].IN1
+C[7] => C[7].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+Slc0 => Slc0.IN2
+Slc1 => Slc1.IN2
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0
+S[0] <= Mux4inp:bit0.S
+S[1] <= Mux4inp:bit1.S
+S[2] <= Mux4inp:bit2.S
+S[3] <= Mux4inp:bit3.S
+S[4] <= Mux4inp:bit4.S
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+C[3] => C[3].IN1
+C[4] => C[4].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+Slc0 => Slc0.IN5
+Slc1 => Slc1.IN5
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0|Mux4inp:bit0
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0|Mux4inp:bit1
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0|Mux4inp:bit2
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0|Mux4inp:bit3
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux0|Mux4inp:bit4
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1
+S[0] <= Mux4inp:bit0.S
+S[1] <= Mux4inp:bit1.S
+S[2] <= Mux4inp:bit2.S
+S[3] <= Mux4inp:bit3.S
+S[4] <= Mux4inp:bit4.S
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+C[3] => C[3].IN1
+C[4] => C[4].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+Slc0 => Slc0.IN5
+Slc1 => Slc1.IN5
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1|Mux4inp:bit0
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1|Mux4inp:bit1
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1|Mux4inp:bit2
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1|Mux4inp:bit3
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|Mux4inp8bits:Mux1|Mux4inp4bits:Mux1|Mux4inp:bit4
+S <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+A => T[4].IN1
+B => T[5].IN1
+C => T[6].IN1
+D => T[7].IN1
+Slc0 => T[1].IN0
+Slc0 => T[3].IN0
+Slc0 => T[0].IN0
+Slc0 => T[2].IN0
+Slc1 => T[2].IN1
+Slc1 => T[3].IN1
+Slc1 => T[0].IN1
+Slc1 => T[1].IN1
+
+
+|Main|DivFreq:Div
+S <= FlipFlopD:FFD0.q
+Clk => Clk.IN1
+
+
+|Main|DivFreq:Div|FlipFlopD:FFD0
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync
+clk => clk.IN10
+q[0] <= FlipFlopD:FFD0.q
+q[1] <= FlipFlopD:FFD1.q
+q[2] <= FlipFlopD:FFD2.q
+q[3] <= FlipFlopD:FFD3.q
+q[4] <= FlipFlopD:FFD4.q
+q[5] <= FlipFlopD:FFD5.q
+q[6] <= FlipFlopD:FFD6.q
+q[7] <= FlipFlopD:FFD7.q
+q[8] <= FlipFlopD:FFD8.q
+q[9] <= FlipFlopD:FFD9.q
+rst_n <= rst_n.DB_MAX_OUTPUT_PORT_TYPE
+T <= gate_reset.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD0
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD1
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD2
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD3
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD4
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD5
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD6
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD7
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD8
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorHsync:ContHsync|FlipFlopD:FFD9
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync
+clk => clk.IN10
+q[0] <= FlipFlopD:FFD0.q
+q[1] <= FlipFlopD:FFD1.q
+q[2] <= FlipFlopD:FFD2.q
+q[3] <= FlipFlopD:FFD3.q
+q[4] <= FlipFlopD:FFD4.q
+q[5] <= FlipFlopD:FFD5.q
+q[6] <= FlipFlopD:FFD6.q
+q[7] <= FlipFlopD:FFD7.q
+q[8] <= FlipFlopD:FFD8.q
+q[9] <= FlipFlopD:FFD9.q
+rst_n <= rst_n.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD0
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD1
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD2
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD3
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD4
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD5
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD6
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD7
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD8
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ContadorVsync:ContVsync|FlipFlopD:FFD9
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CriarBloco:HSYNC_GEN
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:HSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:VSYNC_GEN|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|FlipFlopD:FF_HSYNC
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|FlipFlopD:FF_VSYNC
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CriarBloco:BLANK_H
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_H|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANK_V|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|Sprite_Gas:R_A
+address_y[0] => Decoder0.IN3
+address_y[1] => Decoder0.IN2
+address_y[1] => Decoder1.IN2
+address_y[2] => Decoder0.IN1
+address_y[2] => Decoder1.IN1
+address_y[2] => Decoder2.IN1
+address_y[3] => Decoder0.IN0
+address_y[3] => Decoder1.IN0
+address_y[3] => Decoder2.IN0
+row_data[0] <= <GND>
+row_data[1] <= <GND>
+row_data[2] <= <GND>
+row_data[3] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[4] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+row_data[6] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+row_data[7] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+row_data[8] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+row_data[9] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[10] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[11] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[12] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[13] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[14] <= <GND>
+row_data[15] <= <GND>
+
+
+|Main|FlipFlopD:FF_VIDEO0
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CriarBloco:BLANKB_H
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_H|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKB_V|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|Sprite_Temp:R_B
+address_y[0] => Decoder0.IN3
+address_y[1] => Decoder0.IN2
+address_y[1] => Decoder1.IN2
+address_y[2] => Decoder0.IN1
+address_y[2] => Decoder1.IN1
+address_y[3] => Decoder0.IN0
+address_y[3] => Decoder1.IN0
+row_data[0] <= <GND>
+row_data[1] <= <GND>
+row_data[2] <= <GND>
+row_data[3] <= <GND>
+row_data[4] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[5] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[7] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[8] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[9] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[10] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[11] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[12] <= <GND>
+row_data[13] <= <GND>
+row_data[14] <= <GND>
+row_data[15] <= <GND>
+
+
+|Main|FlipFlopD:FF_VIDEO1
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CriarBloco:BLANKC_H
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_H|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKC_V|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|Sprite_Pessoa:R_C
+address_y[0] => Decoder1.IN3
+address_y[1] => Decoder0.IN2
+address_y[1] => Decoder1.IN2
+address_y[2] => Decoder0.IN1
+address_y[2] => Decoder1.IN1
+address_y[3] => Decoder0.IN0
+address_y[3] => Decoder1.IN0
+row_data[0] <= <GND>
+row_data[1] <= <GND>
+row_data[2] <= <GND>
+row_data[3] <= <GND>
+row_data[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+row_data[5] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+row_data[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+row_data[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[9] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[10] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[11] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[12] <= <GND>
+row_data[13] <= <GND>
+row_data[14] <= <GND>
+row_data[15] <= <GND>
+
+
+|Main|FlipFlopD:FF_VIDEO2
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CriarBloco:BLANKD_H
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_H|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+ConstMin[0] => ConstMin[0].IN1
+ConstMin[1] => ConstMin[1].IN1
+ConstMin[2] => ConstMin[2].IN1
+ConstMin[3] => ConstMin[3].IN1
+ConstMin[4] => ConstMin[4].IN1
+ConstMin[5] => ConstMin[5].IN1
+ConstMin[6] => ConstMin[6].IN1
+ConstMin[7] => ConstMin[7].IN1
+ConstMin[8] => ConstMin[8].IN1
+ConstMin[9] => ConstMin[9].IN1
+ConstMax[0] => ConstMax[0].IN1
+ConstMax[1] => ConstMax[1].IN1
+ConstMax[2] => ConstMax[2].IN1
+ConstMax[3] => ConstMax[3].IN1
+ConstMax[4] => ConstMax[4].IN1
+ConstMax[5] => ConstMax[5].IN1
+ConstMax[6] => ConstMax[6].IN1
+ConstMax[7] => ConstMax[7].IN1
+ConstMax[8] => ConstMax[8].IN1
+ConstMax[9] => ConstMax[9].IN1
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp0|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1
+Lt <= Comparador1bit:bit0.port0
+Gt <= Comparador1bit:bit0.port1
+Eq <= Comparador1bit:bit0.port2
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit9
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit8
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit7
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit6
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit5
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit4
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit3
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit2
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit1
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|CriarBloco:BLANKD_V|Comparador10bits:Comp1|Comparador1bit:bit0
+Lt <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+Gt <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Nor0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+A => And1.IN0
+B => And1.IN1
+B => And0.IN1
+Ltin => Or1.IN1
+Ltin => And0.IN2
+Gtin => Or0.IN1
+Gtin => And1.IN2
+
+
+|Main|Sprite_Luz:R_D
+address_y[0] => Decoder0.IN3
+address_y[1] => Decoder0.IN2
+address_y[2] => Decoder0.IN1
+address_y[3] => Decoder0.IN0
+row_data[0] <= <GND>
+row_data[1] <= <GND>
+row_data[2] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[3] <= <GND>
+row_data[4] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+row_data[8] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+row_data[9] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+row_data[10] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+row_data[11] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+row_data[12] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[13] <= <GND>
+row_data[14] <= row_data.DB_MAX_OUTPUT_PORT_TYPE
+row_data[15] <= <GND>
+
+
+|Main|FlipFlopD:FF_VIDEO3
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

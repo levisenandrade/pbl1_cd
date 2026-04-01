@@ -1,0 +1,6 @@
+module Mux4inp(S, A, B, C, D, Slc0, Slc1);
+	input A, B, C, D, Slc0, Slc1;
+	output S;
+	
+	not(nSlc0, Slc0);
+	not(nSlc1, Slc1);
